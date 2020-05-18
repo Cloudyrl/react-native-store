@@ -1,6 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, Image} from 'react-native';
 import CustomInput from '../../components/input/customInput';
+import CustomButton from '../../components/button/customButton';
 import imageLogo from '../../assets/vintage2.png';
 
 const Login = () => {
@@ -8,8 +9,9 @@ const Login = () => {
     <View style={styles.container}>
       <Image source={imageLogo} style={styles.logo} />
       <View style={styles.form}>
-        <CustomInput placeholder="email" />
-        <CustomInput placeholder="password" />
+        <CustomInput placeholder="Email" />
+        <CustomInput placeholder="Password" />
+        <CustomButton title="submit"/>
       </View>
     </View>
   );
