@@ -3,11 +3,9 @@ import {Alert,Text,TouchableOpacity,StyleSheet} from 'react-native';
 
 
 const CustomButton = (props) =>{
-    const {title , ...otherProps} = props;
+    const {title , onPress ,...otherProps} = props;
 
-
-
-    return <TouchableOpacity style={styles.container} activeOpacity={0.8}>
+    return <TouchableOpacity style={styles.container} activeOpacity={0.8} onPress={onPress}>
         <Text style={styles.text} {...otherProps}>{title}</Text>
   </TouchableOpacity>
 }

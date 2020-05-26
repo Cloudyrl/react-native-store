@@ -16,7 +16,7 @@ const customInput = props => {
     }
   };
 
-  const {style, ...otherProps} = props;
+  const {style,setInput, ...otherProps} = props;
   return (
     <TextInput
       style={

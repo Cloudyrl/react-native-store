@@ -1,0 +1,1 @@
+export const STRAPI_API = "https://vintage-store-strapi-api.herokuapp.com"
